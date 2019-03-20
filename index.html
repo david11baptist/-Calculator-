@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<link rel="stylesheet" href="style.css">
+<script src="JavaScript.js"></script>
+
+
+<div class="bg"></div>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview">
+
+    </form>
+    <table>
+        <tr>
+            <td><input class="button" type="button" value="C" onclick="clean()"> </td>
+            <td><input class="button" type="button" value="<" onclick="back()"> </td>
+            <td><input class="button" type="button" value="/" onclick="insent('/')"> </td>
+            <td><input class="button" type="button" value="x" onclick="insent('*')"> </td>
+
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="insent(7)"> </td>
+            <td><input class="button" type="button" value="8" onclick="insent(8)"> </td>
+            <td><input class="button" type="button" value="9" onclick="insent(9)"> </td>
+            <td><input class="button" type="button" value="-" onclick="insent('-')"> </td>
+
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="insent(4)"> </td>
+            <td><input class="button" type="button" value="5" onclick="insent(5)"> </td>
+            <td><input class="button" type="button" value="6" onclick="insent(6)"> </td>
+            <td><input class="button" type="button" value="+" onclick="insent('+')"> </td>
+
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="1" onclick="insent(1)"></td>
+            <td><input class="button" type="button" value="2" onclick="insent(2)"> </td>
+            <td><input class="button" type="button" value="3" onclick="insent(3)"> </td>
+            <td rowspan=5><input class="button" style="height: 202px" type="button" value="=" onclick="equal()"> </td>
+
+        </tr>
+        <tr>
+            <td colspan=2><input class="button" style="width: 202px" type="button" value="0" onclick="insent(0)"></td>
+            <td><input class="button" type="button" value="." onclick="insent('.')"> </td>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>
